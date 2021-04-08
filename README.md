@@ -14,13 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ## Usage
+This library defines an API for feature flags and does not provide a runtime implimentation.
+
 ### Availability
 This library is available from Maven Central with more information at
 https://mvnrepository.com/artifact/io.service84.library/featureflagapi
 
 ### Dependencies
-This library defines an API for feature flags, It has no dependencies and does not
-provide a runtime implimentation.
+This library has no dependencies.
 
 ## Build
 This is a Java 11 project that builds best with Gradle 6.3
