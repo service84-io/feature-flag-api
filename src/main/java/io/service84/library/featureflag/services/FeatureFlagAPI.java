@@ -14,6 +14,20 @@
 
 package io.service84.library.featureflag.services;
 
+import java.util.List;
+
 public interface FeatureFlagAPI {
   public Boolean getFlag(String flagName, String user, Boolean defaultValue);
+
+  public Boolean getValue(String flagName, String user, Boolean defaultValue);
+
+  public List<String> getFlags(Integer page, Integer limit);
+
+  public void setValue(String flagName, Boolean value);
+
+  public void setValue(String flagName, String user, Boolean value);
+
+  public void clearValue(String flagName);
+
+  public void clearValue(String flagName, String user);
 }
