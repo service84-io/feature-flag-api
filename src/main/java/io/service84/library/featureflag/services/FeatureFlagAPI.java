@@ -17,11 +17,16 @@ package io.service84.library.featureflag.services;
 import java.util.List;
 
 public interface FeatureFlagAPI {
+  public List<String> getFlags(Integer page, Integer limit);
+
+  /*
+   * @deprecated
+   * Use getValue instead
+   */
+  @Deprecated(since = "1.3.0")
   public Boolean getFlag(String flagName, String user, Boolean defaultValue);
 
   public Boolean getValue(String flagName, String user, Boolean defaultValue);
-
-  public List<String> getFlags(Integer page, Integer limit);
 
   public void setValue(String flagName, Boolean value);
 
