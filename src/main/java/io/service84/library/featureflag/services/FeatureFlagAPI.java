@@ -20,11 +20,12 @@ public interface FeatureFlagAPI {
   public List<String> getFlags(Integer page, Integer limit);
 
   /*
-   * @deprecated
-   * Use getValue instead
+   * @deprecated Use getValue instead
    */
   @Deprecated(since = "1.3.0")
   public Boolean getFlag(String flagName, String user, Boolean defaultValue);
+
+  public Boolean getValue(String flagName, String user);
 
   public Boolean getValue(String flagName, String user, Boolean defaultValue);
 

@@ -9,6 +9,21 @@ public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
   }
 
   @Override
+  public Boolean getFlag(String flagName, String user, Boolean defaultValue) {
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
+  public Boolean getValue(String flagName, String user) {
+    return getValue(flagName, user, Boolean.TRUE);
+  }
+
+  @Override
+  public Boolean getValue(String flagName, String user, Boolean defaultValue) {
+    return getFlag(flagName, user, defaultValue);
+  }
+
+  @Override
   public void setValue(String flagName, Boolean value) {
     throw new UnsupportedOperationException();
   }
@@ -16,16 +31,6 @@ public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
   @Override
   public void setValue(String flagName, String user, Boolean value) {
     throw new UnsupportedOperationException();
-  }
-
-  @Override
-  public Boolean getFlag(String flagName, String user, Boolean defaultValue) {
-    throw new UnsupportedOperationException();
-  }
-
-  @Override
-  public Boolean getValue(String flagName, String user, Boolean defaultValue) {
-    return getFlag(flagName, user, defaultValue);
   }
 
   @Override
