@@ -156,9 +156,12 @@ configurations.all {
 }
 
 dependencies {
+  compileOnly 'org.slf4j:slf4j-api:1.3.0'
+
   ////////////////////////////////
   //Test Dependencies/////////////
   ////////////////////////////////
+  // This fulfils the SLF4J 1.3+ requirement
   testImplementation 'org.springframework.boot:spring-boot-starter-test:2.4.2'
 }
 
