@@ -14,10 +14,10 @@
 
 package io.service84.library.featureflag.services;
 
-import java.util.List;
+import io.service84.library.featureflag.model.FlagPage;
 
 public interface FeatureFlagAPI {
-  public List<String> getFlags(Integer page, Integer limit);
+  public FlagPage getFlags(Integer page, Integer limit);
 
   /*
    * @deprecated Use getValue instead

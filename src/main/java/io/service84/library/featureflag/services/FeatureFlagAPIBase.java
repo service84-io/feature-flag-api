@@ -14,16 +14,16 @@
 
 package io.service84.library.featureflag.services;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import io.service84.library.featureflag.model.FlagPage;
 
 public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
   private static final Logger logger = LoggerFactory.getLogger(FeatureFlagAPIBase.class);
 
   @Override
-  public List<String> getFlags(Integer page, Integer limit) {
+  public FlagPage getFlags(Integer page, Integer limit) {
     logger.debug("getFlags");
     throw new UnsupportedOperationException();
   }
