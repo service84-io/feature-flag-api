@@ -17,7 +17,7 @@ package io.service84.library.featureflag.services;
 import io.service84.library.featureflag.model.FlagPage;
 
 public interface FeatureFlagAPI {
-  public FlagPage getFlags(Integer page, Integer limit);
+  public FlagPage getFlags(String cursor, Integer limit);
 
   /*
    * @deprecated Use getValue instead
