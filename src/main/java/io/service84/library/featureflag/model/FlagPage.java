@@ -14,11 +14,14 @@
 
 package io.service84.library.featureflag.model;
 
+import java.util.List;
+
 public class FlagPage {
   private Integer page;
   private Integer limit;
   private Integer count;
   private Integer total;
+  private List<String> flags;
 
   public Integer getPage() {
     return page;
@@ -50,5 +53,13 @@ public class FlagPage {
 
   public void setTotal(Integer total) {
     this.total = total;
+  }
+
+  public List<String> getFlags() {
+    return flags;
+  }
+
+  public void setFlags(List<String> flags) {
+    this.flags = flags;
   }
 }
