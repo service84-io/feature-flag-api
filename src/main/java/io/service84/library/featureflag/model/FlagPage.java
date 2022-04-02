@@ -17,27 +17,11 @@ package io.service84.library.featureflag.model;
 import java.util.List;
 
 public class FlagPage {
-  private Integer page;
-  private Integer limit;
   private Integer count;
+  private String index;
+  private String nextIndex;
   private Integer total;
   private List<String> flags;
-
-  public Integer getPage() {
-    return page;
-  }
-
-  public void setPage(Integer page) {
-    this.page = page;
-  }
-
-  public Integer getLimit() {
-    return limit;
-  }
-
-  public void setLimit(Integer limit) {
-    this.limit = limit;
-  }
 
   public Integer getCount() {
     return count;
@@ -53,6 +37,22 @@ public class FlagPage {
 
   public void setTotal(Integer total) {
     this.total = total;
+  }
+
+  public String getIndex() {
+    return index;
+  }
+
+  public void setIndex(String index) {
+    this.index = index;
+  }
+
+  public String getNextIndex() {
+    return nextIndex;
+  }
+
+  public void setNextIndex(String nextIndex) {
+    this.nextIndex = nextIndex;
   }
 
   public List<String> getFlags() {
