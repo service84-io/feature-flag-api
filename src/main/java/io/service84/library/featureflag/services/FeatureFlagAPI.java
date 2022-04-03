@@ -17,6 +17,8 @@ package io.service84.library.featureflag.services;
 import io.service84.library.featureflag.model.FlagPage;
 
 public interface FeatureFlagAPI {
+  public void createFlag(String flagName);
+
   public FlagPage getFlags(String cursor, Integer limit);
 
   /*

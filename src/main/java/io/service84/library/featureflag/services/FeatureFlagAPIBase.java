@@ -23,6 +23,12 @@ public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
   private static final Logger logger = LoggerFactory.getLogger(FeatureFlagAPIBase.class);
 
   @Override
+  public void createFlag(String flagName) {
+    logger.debug("createFlag");
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
   public FlagPage getFlags(String cursor, Integer limit) {
     logger.debug("getFlags");
     throw new UnsupportedOperationException();
