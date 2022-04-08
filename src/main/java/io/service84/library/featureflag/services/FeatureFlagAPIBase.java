@@ -65,6 +65,12 @@ public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
   }
 
   @Override
+  public void clearAllUserValues(String flagName) {
+    logger.debug("clearAllUserValues");
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
   public void clearValue(String flagName) {
     logger.debug("clearValue");
     throw new UnsupportedOperationException();

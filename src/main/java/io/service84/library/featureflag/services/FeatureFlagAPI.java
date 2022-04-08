@@ -35,6 +35,8 @@ public interface FeatureFlagAPI {
 
   public void setValue(String flagName, String user, Boolean value);
 
+  public void clearAllUserValues(String flagName);
+
   public void clearValue(String flagName);
 
   public void clearValue(String flagName, String user);
