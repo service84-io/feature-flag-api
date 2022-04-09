@@ -34,6 +34,10 @@ public abstract class FeatureFlagAPIBase implements FeatureFlagAPI {
     throw new UnsupportedOperationException();
   }
 
+  /*
+   * @deprecated Use getValue instead
+   */
+  @Deprecated(since = "1.3.0")
   @Override
   public Boolean getFlag(String flagName, String user, Boolean defaultValue) {
     logger.debug("getFlag");
