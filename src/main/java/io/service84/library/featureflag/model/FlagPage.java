@@ -16,6 +16,10 @@ package io.service84.library.featureflag.model;
 
 import java.util.List;
 
+/*
+ * TODO find a way to move this to the models package without breaking the
+ * binary interface of the library as used.
+ */
 public class FlagPage {
   private String cursor;
   private String nextCursor;
