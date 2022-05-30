@@ -31,6 +31,7 @@ def s84JarName = 'featureflagapi'
 def s84Description = 'An API definition for libraries that provide feature flag functionality'
 def s84GithubBase = 'https://github.com/service84-io/feature-flag-api'
 def s84Version = '1.3.50-SNAPSHOT'
+def s84CoreName = s84JarName.split('-')[0]
 
 // configure all java components to be published
 publishing {
